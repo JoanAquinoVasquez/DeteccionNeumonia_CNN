@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+  <title>Home</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <link rel="icon" href="{{url_for('static',filename='images/favicon.ico')}}" type="image/x-icon">
+  <!-- Stylesheets-->
+
+  <link rel="stylesheet" type="text/css"
+    href="//fonts.googleapis.com/css?family=Poppins:400,500,600%7CTeko:300,400,500%7CMaven+Pro:500">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/fonts.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <!-- Agregar Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    html.ie-10 .ie-panel,
+    html.lt-ie-10 .ie-panel {
+      display: block;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
+        src="{{url_for('static',filename='images/ie8-panel/warning_bar_0000_us.jpg') }}" height="42" width="820"
+        alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+  </div>
+  <div class="preloader">
+    <div class="preloader-body">
+      <div class="cssload-container"><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+  <div class="page">
+    <div id="home">
+      <!-- Page Header-->
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+            data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
+            data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
+            data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static"
+            data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
+            data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img
+                        src="{{url_for('static',filename='images/isotipo_unprg.png') }}" alt="" width="223"
+                        height="50" /></a></div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="#home">Home</a></li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#info">Informacion</a></li> 
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#projects">Imágenes</a></li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#predict">Probar Ahora</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+
+    </div>
+
+    <!-- Years of experience-->
+    <section class="section section-sm bg-default">
+      <div class="container">
+
+        <div class="row row-30 row-xl-24 justify-content-start align-items-center align-items-lg-start text-left">
+          <div class="col-sm-9 col-md-6 col-lg-5 col-xl-4">
+            <div class="text-width-extra-small offset-top-lg-24 wow fadeInUp">
+              <h3 class="title-decoration-lines-left">Detector de Neumonía a través de rayos X de Toráx</h3>
+              <p class="text-gray-500"></p><a class="button button-secondary button-pipaluk" href="#predict">Probar
+                Ahora!</a>
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-5 col-xl-4 text-center"><a class="text-img" style="font-size: 250px;" href="#">
+              <div id="particles-js"></div><span class="counter">98</span>.98%
+            </a>
+            <h3 class="title-decoration-lines-content">Accuracy</h3>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Latest Projects-->
+    <section class="section section-sm section-fluid bg-default text-center" id="info">
+      <div class="container-fluid">
+        <div class="container mt-5">
+     
+          <div class="wow fadeInLeft info-box">
+            <h2 class="wow fadeInLeft">Detección de Neumonia</h2>
+            <p class="wow fadeInRight" data-wow-delay=".1s">La neumonía es una infección que inflama los sacos de aire
+              en uno o ambos pulmones, que pueden llenarse de líquido o pus. Puede ser causada por diversos patógenos,
+              incluidos bacterias, virus y hongos.</p>
+            <div class="wow fadeInLeft details">
+              <h4>Información Adicional</h4>
+              <div class="row">
+                <div class="col-md-6 mb-3 d-flex">
+                  <div class="info-card">
+                    <h4 class="info-card-title">Síntomas Comunes</h4>
+                    <p>Fiebre, tos, escalofríos, dificultad para respirar, dolor en el pecho.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3 d-flex">
+                  <div class="info-card">
+                    <h4 class="info-card-title">Factores de Riesgo</h4>
+                    <p>Edad avanzada, sistema inmunológico debilitado, enfermedades crónicas como diabetes o enfermedad pulmonar obstructiva crónica (EPOC).</p>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3 d-flex">
+                  <div class="info-card">
+                    <h4 class="info-card-title">Prevención</h4>
+                    <p>Vacunas, mantener una buena higiene, evitar el humo del tabaco.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3 d-flex">
+                  <div class="info-card">
+                    <h4 class="info-card-title">Tratamiento</h4>
+                    <p>Antibióticos (para neumonía bacteriana), antivirales (para neumonía viral), y otros medicamentos según la causa.</p>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+        </div>
+        </div>
+      </section>
+        <section class="section section-sm section-fluid bg-default text-center" id="projects">
+          <div class="container-fluid">
+        <div class="isotope-filters isotope-filters-horizontal">
+          <button
+            class="isotope-filters-toggle button button-md button-icon button-icon-right button-default-outline button-wapasha"
+            data-custom-toggle="#isotope-3" data-custom-toggle-hide-on-blur="true"
+            data-custom-toggle-disable-on-blur="true"><span class="icon fa fa-caret-down"></span>Filter</button>
+          <ul class="isotope-filters-list" id="isotope-3">
+            <li><a class="active" href="#" data-isotope-filter="*" data-isotope-group="gallery">TODOS</a></li>
+            <li><a href="#" data-isotope-filter="Type 2" data-isotope-group="gallery">NORMAL</a></li>
+            <li><a href="#" data-isotope-filter="Type 1" data-isotope-group="gallery">NEUMONIA</a></li>
+          </ul>
+        </div>
+        <div class="row row-30 isotope" data-isotope-layout="fitRows" data-isotope-group="gallery"
+          data-lightgallery="group">
+          <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 1"
+            data-wow-delay=".1s">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-classic thumbnail-md">
+              <div class="thumbnail-classic-figure"><img
+                  src="{{url_for('static',filename='images/NEUMONIA/person1_virus_13.jpeg')}}"
+                  style="width: 420px; height: 350px;" />
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60"
+                    href="{{url_for('static',filename='images/grid-gallery-2-1200x800-original.jpg')}}"
+                    data-lightgallery="item"><img
+                      src="{{url_for('static',filename='images/fullwidth-gallery-2-420x350.jpg')}}" alt="" width="420"
+                      height="350" /></a>
+                  <h5 class="thumbnail-classic-title"><a href="#">NEUMONIA</a></h5>
+                </div>
+                <!-- <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p> -->
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 1"
+            data-wow-delay=".1s">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-classic thumbnail-md">
+              <div class="thumbnail-classic-figure"><img
+                  src="{{url_for('static',filename='images/NEUMONIA/person1_virus_11.jpeg')}}"
+                  style="width: 420px; height: 350px;" />
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60"
+                    href="{{url_for('static',filename='images/grid-gallery-2-1200x800-original.jpg')}}"
+                    data-lightgallery="item"><img
+                      src="{{url_for('static',filename='images/fullwidth-gallery-2-420x350.jpg')}}" alt="" width="420"
+                      height="350" /></a>
+                  <h5 class="thumbnail-classic-title"><a href="#">NEUMONIA</a></h5>
+                </div>
+                <!-- <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p> -->
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 1"
+            data-wow-delay=".2s">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-classic thumbnail-md">
+              <div class="thumbnail-classic-figure"><img
+                  src="{{url_for('static',filename='images/NEUMONIA/person1_virus_12.jpeg')}}"
+                  style="width: 420px; height: 350px;" />
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60"
+                    href="{{url_for('static',filename='images/grid-gallery-3-1200x800-original.jpg')}}"
+                    data-lightgallery="item"><img
+                      src="{{url_for('static',filename='images/fullwidth-gallery-3-420x350.jpg')}}" alt="" width="420"
+                      height="350" /></a>
+                  <h5 class="thumbnail-classic-title"><a href="#">NEUMONIA</a></h5>
+                </div>
+                <!-- <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p> -->
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight" data-filter="Type 1"
+            data-wow-delay=".3s">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-classic thumbnail-md">
+              <div class="thumbnail-classic-figure"><img
+                  src="{{url_for('static',filename='images/NEUMONIA/person1_virus_13.jpeg')}}"
+                  style="width: 420px; height: 350px;" />
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60"
+                    href="{{url_for('static',filename='images/grid-gallery-4-1200x800-original.jpg')}}"
+                    data-lightgallery="item"><img
+                      src="{{url_for('static',filename='images/fullwidth-gallery-4-420x350.jpg')}}" alt="" width="420"
+                      height="350" /></a>
+                  <h5 class="thumbnail-classic-title"><a href="#">NEUMONIA</a></h5>
+                </div>
+                <!-- <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p> -->
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 2">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-classic thumbnail-md">
+              <div class="thumbnail-classic-figure"><img
+                  src="{{url_for('static',filename='images/NORMAL/IM-0001-0001.jpeg')}}"
+                  style="width: 420px; height: 350px;" />
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60"
+                    href="{{url_for('static',filename='images/grid-gallery-5-1200x800-original.jpg')}}"
+                    data-lightgallery="item"><img
+                      src="{{url_for('static',filename='images/fullwidth-gallery-5-420x350.jpg')}}" alt="" width="420"
+                      height="350" /></a>
+                  <h5 class="thumbnail-classic-title"><a href="#">NORMAL</a></h5>
+                </div>
+                <!-- <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p> -->
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 2"
+            data-wow-delay=".1s">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-classic thumbnail-md">
+              <div class="thumbnail-classic-figure"><img
+                  src="{{url_for('static',filename='images/NORMAL/IM-0010-0001.jpeg')}}"
+                  style="width: 420px; height: 350px;" />
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60"
+                    href="{{url_for('static',filename='images/grid-gallery-6-1200x800-original.jpg')}}"
+                    data-lightgallery="item"><img
+                      src="{{url_for('static',filename='images/fullwidth-gallery-6-420x350.jpg')}}" alt="" width="420"
+                      height="350" /></a>
+                  <h5 class="thumbnail-classic-title"><a href="#">NORMAL</a></h5>
+                </div>
+                <!-- <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p> -->
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 2"
+            data-wow-delay=".2s">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-classic thumbnail-md">
+              <div class="thumbnail-classic-figure"><img
+                  src="{{url_for('static',filename='images/NORMAL/IM-0011-0001-0001.jpeg')}}"
+                  style="width: 420px; height: 350px;" />
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60"
+                    href="{{url_for('static',filename='images/grid-gallery-7-1200x800-original.jpg')}}"
+                    data-lightgallery="item"><img
+                      src="{{url_for('static',filename='images/fullwidth-gallery-7-420x350.jpg')}}" alt="" width="420"
+                      height="350" /></a>
+                  <h5 class="thumbnail-classic-title"><a href="#">NORMAL</a></h5>
+                </div>
+                <!-- <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p> -->
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft" data-filter="Type 2"
+            data-wow-delay=".3s">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-classic thumbnail-md">
+              <div class="thumbnail-classic-figure"><img
+                  src="{{url_for('static',filename='images/NORMAL/IM-0011-0001-0002.jpeg')}}"
+                  style="width: 420px; height: 350px;" />
+              </div>
+              <div class="thumbnail-classic-caption">
+                <div class="thumbnail-classic-title-wrap"><a class="icon fl-bigmug-line-zoom60"
+                    href="{{url_for('static',filename='images/grid-gallery-8-1200x800-original.jpg')}}"
+                    data-lightgallery="item"><img
+                      src="{{url_for('static',filename='images/fullwidth-gallery-8-420x350.jpg')}}" alt="" width="420"
+                      height="350" /></a>
+                  <h5 class="thumbnail-classic-title"><a href="#">NORMAL</a></h5>
+                </div>
+                <!-- <p class="thumbnail-classic-text">We work hard on every app to deliver top-notch features with great UI that you won’t find anywhere else.</p> -->
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form-->
+    <section class="section section-sm section-last bg-default text-left" id="predict">
+      <div class="container">
+        <article class="title-classic">
+          <div class="title-decoration-lines">
+            <h3>Modelo de Inteligencia artificial basado en CNN</h3>
+
+          </div>
+          <div class="title-classic-text">
+            <p>Los resultados generados por el modelo de inteligencia artificial pueden tener limitaciones y no
+              sustituyen el juicio profesional.</p>
+            <p>Siempre consulte a un médico o a un especialista en salud para obtener un diagnóstico preciso y un plan
+              de tratamiento adecuado.</p>
+
+          </div>
+
+        </article>
+        <form data-form-type="contact" method="post" enctype="multipart/form-data" action="/">
+          <div class="row row-14 gutters-14">
+
+            <div class="col-md-4">
+
+              <div class="form-wrap">
+
+                <!-- Input para subir imágenes -->
+                <p>Sube tu imagen aquí</p>
+
+                <input class="form-input" id="image-upload" type="file" name="file" accept="image/*"
+                  data-constraints="@Required">
+              </div>
+            </div>
+
+
+
+          </div>
+          <button class="button button-primary button-pipaluk" type="submit">Detectar</button>
+
+
+          <br><br>
+          <br><br>
+          {% if result %}
+          <div id="resultado-prediccion" class="result-section container my-5">
+            <div class="row align-items-center">
+              <!-- Columna de la imagen -->
+              <div class="col-md-6 text-center">
+                <img src="{{ url_for('static', filename=image_path) }}" alt="Imagen procesada"
+                  class="img-fluid rounded shadow" style="max-width: 100%; height: auto;">
+                <h4 class="text-center">Resultado de la predicción: <br><strong>{{ result }}</strong></h4>
+              </div>
+              <!-- Columna del texto personalizado -->
+              <div class="col-md-6">
+
+
+                {% if result == 'NORMAL' %}
+                <!-- Mensaje personalizado para resultado NORMAL -->
+                <div
+                  style="background-color: #d4edda; border-color: #c3e6cb; color: #155724; padding: 15px; border-radius: 0.25rem; border: 1px solid #c3e6cb; margin-bottom: 15px;">
+                  <div class="card-header bg-success text-white text-center">
+                    <h4><i class="bi bi-emoji-smile"></i> ¡Felicitaciones, todo está bien! </h4>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">No se detectaron signos de neumonía. Tu radiografía de tórax muestra un patrón
+                      normal.</p>
+                    <p class="card-text">Sigue cuidando tu salud manteniendo hábitos saludables como una <strong>dieta
+                        balanceada, ejercicio regular</strong>, y evitando el <strong>humo del tabaco.</strong></p>
+                    <p class="card-text"><i class="bi bi-check-circle-fill"></i> <strong>Recuerda hacer chequeos médicos
+                        regulares para mantenerte saludable.</strong></p>
+                  </div>
+                </div>
+                {% elif result == 'NEUMONÍA' %}
+                <!-- Mensaje personalizado para resultado de NEUMONÍA -->
+                <div
+                  style="background-color: #f8d7da; border-color: #f5c6cb; color: #721c24; padding: 15px; border-radius: 0.25rem; border: 1px solid #f5c6cb; margin-bottom: 15px;">
+                  <div class="card-header bg-danger text-white text-center">
+                    <h4><i class="bi bi-exclamation-triangle-fill"></i> ¡Atención Urgente!</h4>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Se han detectado signos de <strong>neumonía</strong> en tu radiografía de
+                      tórax. Es importante que consultes a un médico <strong>inmediatamente</strong> para un diagnóstico
+                      más detallado y recibir el tratamiento adecuado.</p>
+                    <div class="alert alert-danger" role="alert">
+                      <strong><i class="bi bi-exclamation-circle-fill"></i> La neumonía puede ser una condición
+                        seria.</strong> Asegúrate de seguir estas indicaciones:
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><i class="bi bi-thermometer-half"></i> Visita a un especialista en
+                        salud respiratoria.</li>
+                      <li class="list-group-item"><i class="bi bi-heart-pulse"></i> Sigue una dieta saludable para
+                        fortalecer tu sistema inmunológico.</li>
+                      <li class="list-group-item"><i class="bi bi-cloud-slash"></i> Evita el humo del tabaco y la
+                        contaminación del aire.</li>
+                    </ul>
+                  </div>
+                </div>
+                {% endif %}
+
+              </div>
+            </div>
+          </div>
+          {% endif %}
+        </form>
+      </div>
+    </section>
+
+
+    <!-- Page Footer-->
+    <footer class="section section-fluid footer-minimal context-dark">
+      <div class="bg-gray-15">
+        <div class="container-fluid">
+
+          <div class="footer-minimal-bottom-panel text-sm-left">
+            <div class="row row-10 align-items-md-center">
+              <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
+                <div>
+                  <ul class="list-inline list-inline-sm footer-social-list-2">
+                    <li><a class="icon fa fa-facebook" href="#"></a></li>
+                    <li><a class="icon fa fa-twitter" href="#"></a></li>
+                    <li><a class="icon fa fa-google-plus" href="#"></a></li>
+                    <li><a class="icon fa fa-instagram" href="#"></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 order-sm-first">
+                <!-- Rights-->
+                <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span>Inteligencia
+                    Articial - Universidad Nacional Pedro Ruiz Gallo</span>
+                </p>
+              </div>
+              <div class="col-sm-6 col-md-4 text-md-right"><span>All rights reserved.</span>
+                <span>Design&nbsp;by&nbsp;<a href="#">Joan Aquino Vasquez</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+
+    <script src="{{ url_for('static', filename='js/core.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/script.js')}}"></script>
+    <!-- Agregar Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- coded by Himic-->
+</body>
+
+</html>
