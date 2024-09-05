@@ -84,4 +84,4 @@ def index():
     return render_template('index.html', result=None, image_path=None, percentages=None)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
